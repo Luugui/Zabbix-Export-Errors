@@ -1,0 +1,11 @@
+certifi==2021.10.8
+charset-normalizer==2.0.7
+colorama==0.4.4
+et-xmlfile==1.1.0
+idna==3.3
+openpyxl==3.0.9
+pyzabbix==1.0.0
+requests==2.26.0
+semantic-version==2.8.5
+tqdm==4.62.3
+urllib3==1.26.7
