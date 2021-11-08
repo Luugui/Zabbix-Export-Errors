@@ -36,7 +36,7 @@ SENHA=args['password']
 
 app = ZabbixAPI(URL)
 try:
-    if "https" in args["server"]:
+    if "https" in URL:
       import requests
 
       requests.packages.urllib3.disable_warnings()
