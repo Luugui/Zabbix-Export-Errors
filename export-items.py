@@ -36,6 +36,11 @@ SENHA=args['password']
 
 app = ZabbixAPI(URL)
 try:
+    if "https" in args["server"]:
+      import requests
+
+      requests.packages.urllib3.disable_warnings()
+      app.session.verify = False
     app.login(LOGIN,SENHA)
     print(f"{Fore.GREEN}+{Fore.WHITE} Connected")
 except:
